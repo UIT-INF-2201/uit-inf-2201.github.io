@@ -4,8 +4,6 @@ layout: default
 
 ## Administrative information
 
-
-test
 Administrative course information is available [here](https://uit.no/utdanning/emner/emne?p_document_id=859834)
 
 We use Canvas to share important information, make sure to check your email. 

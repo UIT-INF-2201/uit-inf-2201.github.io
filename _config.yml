@@ -1,11 +1,14 @@
-title: Course name (edit _config.yml)
+title: INF-2201 Operating system fundamentals
 
 description: > # this means to ignore newlines until "contact:"
-  Course description.
+  The course provides a thorough introduction to operating system.
+  Topics include threads and processes, process coordination and synchronization, physical and virtual storage organization, interrupt handling, peripheral devices and file systems.
+  The exercises include both analysis of abstractions, and their design and implementation.
+  During the course each student will develop a running operating system kernel for an Intel x86 based computer.
 
 contact:
-  email: firstname.lastname@uit.no
-  name: Firstname Lastname (edit _config.yml)
+  email: john.markus.bjorndalen@uit.no
+  name: John Markus Bjørndalen
 
 # you don't need to adapt the settings below
 baseurl: ""

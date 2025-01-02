@@ -11,7 +11,7 @@ For discussions/chat the course has its own Discord server, you will find and in
 
 The github organization for this course can be found [here](https://github.com/uit-inf-2201-s25)
 
-TODO: discord, teams, +++
+Less formal communication channels are in the making, it might be Teams, it might be Discord, or it might be something completely different.
 
 
 **Staff**
@@ -28,8 +28,6 @@ TA/groups
 * Belal Medhat Mostafa AbdAlRheem <belal.m.abdalrheem@uit.no> (TA, group 3)
 * Ilya Taksis (TA, group "Digital")
 
-
-TODO: 
 UiT Student administration: [TopDesk link from Canvas](https://uit.topdesk.net/tas/public/ssp/1550ac93-3cae-443d-a606-4ac1b2e5e6e1).
 
 **Cheating**

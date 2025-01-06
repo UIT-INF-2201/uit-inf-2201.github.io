@@ -94,10 +94,14 @@ Below is the scheduled dates and topics for lectures and project hand-outs. Plea
 
 | Project | Subject                                      | Lecturer |
 |---------|----------------------------------------------|----------|
-| P1      | Booting, OS image                            | MM       |
+| ~~P1~~  | ~~Booting, OS image  (see below)~~           | MM       |
 | P2      | Cooperative scheduling, locks                | MM       |
 | P3      | Preemption, syscalls and dining philosophers | MM       |
 | P4      | IPC, memory                                  | MM       |
 | P5      | Virtual Memory                               | MM       |
 | P6      | File system                                  | MM       |
+
+We are restructuring the course. P1 is no longer a mandatory project,
+and some of tasks from the old P1 project are moved to P2.
+
 

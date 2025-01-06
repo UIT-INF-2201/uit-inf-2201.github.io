@@ -9,9 +9,9 @@ Administrative course information is available [here](https://en.uit.no/utdannin
 We use Canvas to share important information, make sure to check your email. 
 For discussions/chat the course has its own Discord server, you will find and invitation link on Canvas.
 
-The github organization for this course can be found [here](https://github.com/uit-inf-2201-s25)
+The github organization for this course can be found [here](https://github.com/uit-inf-2201)
 
-Less formal communication channels are in the making, it might be Teams, it might be Discord, or it might be something completely different.
+Less formal communication channels are in the making. An invite will be posted on Canvas when it's ready.
 
 
 **Staff**
@@ -58,31 +58,31 @@ Below is the scheduled dates and topics for lectures and project hand-outs. Plea
 
 
 
-| W# | wdays       | Mon           | Tue                       | Wed              | Thu                                     | Fr              |
-|---:|-------------|---------------|---------------------------|------------------|-----------------------------------------|-----------------|
-|  2 | 06.01-10.01 |               | 01 intro                  |                  | 02 + 04 syscalls, processes, protection |                 |
-|  3 | 13.01-17.01 |               | 05 threads, critsec       | P2 out           | 05 cont., 06 semaphores                 |                 |
-|  4 | 20.01-24.01 |               | 03 OS structure           |                  | 07 monitors                             |                 |
-|  5 | 27.01-31.01 |               |                           |                  | 08 preemptive                           |                 |
-|  6 | 03.02-07.02 | P2 in         |                           | P3 out           | *SAMEFOLKETS DAG*                       |                 |
-|  7 | 10.02-14.02 |               | *No lecture (TEKdagen)*   |                  | 11 msgpassing                           |                 |
-|  8 | 17.02-21.02 |               | 09 deadlocks              |                  | 10 cpu scheduling                       |                 |
-|  9 | 24.02-08.02 | P3 in         | 12 io devices and drivers | P4 out           |                                         |                 |
-| 10 | 03.03-07.03 |               | 13 addr-trans paging      |                  | 14 paging and vm design                 |                 |
-| 11 | 10.03-14.03 |               |                           |                  |                                         |                 |
-| 12 | 17.03-21.03 | P4 in         |                           | P5 out           |                                         |                 |
-| 13 | 24.03-28.03 |               | 15 storage systems        |                  |                                         |                 |
-| 14 | 31.03-04.04 |               | 16 file systems           |                  |                                         |                 |
-| 15 | 07.04-11.04 | P5 in         |                           | P6 (TBA)         |                                         |                 |
-| 16 | 14.04-18.04 | *EASTER*      | *EASTER*                  | *EASTER*         | *EASTER*                                | *EASTER*        |
-| 17 | 21.04-25.04 | *EASTER*      |                           |                  |                                         |                 |
-| 18 | 28.04-02.05 |               |                           |                  |                                         |                 |
-| 19 | 05.05-09.05 | P6 in??       | 17 security               |                  |                                         |                 |
-| 20 | 12.05-16.05 |               | 18 exam prep              |                  |                                         |                 |
-| 21 | 19.05-23.05 | =>lists?      |                           |                  |                                         |                 |
-| 22 | 26.05-30.05 |               |                           |                  |                                         |                 |
-| 23 | 02.06-06.06 | exam?         |                           |                  |                                         |                 |
-| 24 | 09.06-13.06 | *whit monday* |                           |                  |                                         | End of semester |
+| W# | wdays       | Mon           | Tue                       | Wed      | Thu                                     | Fr              |
+|---:|-------------|---------------|---------------------------|----------|-----------------------------------------|-----------------|
+|  2 | 06.01-10.01 |               | 01 intro                  |          | 02 + 04 syscalls, processes, protection |                 |
+|  3 | 13.01-17.01 |               | 05 threads, critsec       | P2 out   | 05 cont., 06 semaphores                 |                 |
+|  4 | 20.01-24.01 |               | 03 OS structure           |          | 07 monitors                             |                 |
+|  5 | 27.01-31.01 |               |                           |          | 08 preemptive                           |                 |
+|  6 | 03.02-07.02 | P2 in         |                           | P3 out   | *SAMEFOLKETS DAG*                       |                 |
+|  7 | 10.02-14.02 |               | *No lecture (TEKdagen)*   |          | 11 msgpassing                           |                 |
+|  8 | 17.02-21.02 |               | 09 deadlocks              |          | 10 cpu scheduling                       |                 |
+|  9 | 24.02-08.02 | P3 in         | 12 io devices and drivers | P4 out   |                                         |                 |
+| 10 | 03.03-07.03 |               | 13 addr-trans paging      |          | 14 paging and vm design                 |                 |
+| 11 | 10.03-14.03 |               |                           |          |                                         |                 |
+| 12 | 17.03-21.03 | P4 in         |                           | P5 out   |                                         |                 |
+| 13 | 24.03-28.03 |               | 15 storage systems        |          |                                         |                 |
+| 14 | 31.03-04.04 |               | 16 file systems           |          |                                         |                 |
+| 15 | 07.04-11.04 | P5 in         |                           | P6 (TBA) |                                         |                 |
+| 16 | 14.04-18.04 | *EASTER*      | *EASTER*                  | *EASTER* | *EASTER*                                | *EASTER*        |
+| 17 | 21.04-25.04 | *EASTER*      |                           |          |                                         |                 |
+| 18 | 28.04-02.05 |               |                           |          |                                         |                 |
+| 19 | 05.05-09.05 | P6 in??       | 17 security               |          |                                         |                 |
+| 20 | 12.05-16.05 |               | 18 exam prep              |          |                                         |                 |
+| 21 | 19.05-23.05 |               |                           |          |                                         |                 |
+| 22 | 26.05-30.05 |               |                           |          |                                         |                 |
+| 23 | 02.06-06.06 | exam?         |                           |          |                                         |                 |
+| 24 | 09.06-13.06 | *whit monday* |                           |          |                                         | End of semester |
 
 ## Readings
 

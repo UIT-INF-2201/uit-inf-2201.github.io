@@ -11,5 +11,5 @@ contact:
   name: John Markus Bjørndalen
 
 # you don't need to adapt the settings below
-baseurl: ""
+baseurl: /uit-inf-2201
 markdown: kramdown

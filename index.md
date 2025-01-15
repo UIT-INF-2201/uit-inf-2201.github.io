@@ -1,5 +1,5 @@
 ---
-title: UIT-INF-2201
+title: INF-2201 Operating System Fundamentals
 layout: home
 ---
 

@@ -1,0 +1,23 @@
+title: UIT-INF-2201
+description: The course provides a thorough introduction to operating system.
+  Topics include threads and processes, process coordination and synchronization, physical and virtual storage organization, interrupt handling, peripheral devices and file systems.
+  The exercises include both analysis of abstractions, and their design and implementation.
+  During the course each student will develop a running operating system kernel for an Intel x86 based computer.
+theme: just-the-docs
+baseurl: ""
+
+
+contact:
+  email: john.markus.bjorndalen@uit.no
+  name: John Markus Bjørndalen
+
+collections:
+  lectures:
+    output: true
+
+nav_external_links_new_tab: true
+
+just_the_docs:
+  collections:
+    lectures:
+      name: Lectures

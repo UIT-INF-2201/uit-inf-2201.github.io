@@ -1,5 +1,5 @@
 ---
-title: Home
+title: UIT-INF-2201
 layout: home
 ---
 

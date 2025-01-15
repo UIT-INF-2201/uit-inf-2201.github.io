@@ -1,21 +1,18 @@
 # UiT-inf-2201 GitHub-pages
 We have 2 important branches in this repository: `main` and `deploy`.
 
-The flow on this repository is that all work is pushed to  the `main` branch. Workflows listening on the `main` branch will autogenerate new content and commit it to the `deploy` branch.
-On the deploy branch we have 2 workflows that builds and deploy the website.
+The flow on this repository is that all work is pushed to  the `main` branch. Actions listening on the `main` branch will autogenerate new content and commit it to the `deploy` branch.
+On the deploy branch we have 2 actions that builds and deploy the website.
 
 The website is found under https://uit-inf-2201.github.io
-GitHub-pages are deployed from the `deploy` branch.
-
-The current setup for uit-inf-2201 has three github action workflows, one which autogenerate markdown pages for any pdf put into the folder '_lectures/', and two for integration and deployment of the pages.
 
 ## Autogenerate markdown pages from lecture pdfs
-The lectures we give in the operating course are distributed as PDFs.
+The lectures we give in the Operating System course are distributed as PDFs.
 GitHub-pages does not have an out-of-the-box solution to integrate PDFs into our webpage, so we generate a few markdown files as pages which embed reference to the pdfs. You can view the script in`generate_markdown_for_pdf_lectures.sh`.
 
 ## Homepage
 The source for the homepage (`/`) is found under `index.md`.
-To make changes to the homepage, change the `index.md` as you like.
+To make changes to the homepage, change the index file as you like.
 
 ## Adding lectures
 To add lecture notes to GitHub-pages

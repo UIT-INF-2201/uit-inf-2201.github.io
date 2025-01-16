@@ -6,16 +6,30 @@ description: The course provides a thorough introduction to operating system.
 theme: just-the-docs
 baseurl: ""
 
+# Site settings
+logo: /public/uit-top.png
+image: /public/uit-logo.png
 
+# Contact information (person)
 contact:
   email: john.markus.bjorndalen@uit.no
   name: John Markus Bjørndalen
 
+# Makes navigation links open in a new tab
+nav_external_links_new_tab: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "2201 on GitHub":
+    - "https://github.com/uit-inf-2201"
+
+  "2201 on Canvas":
+    - "https://uit.instructure.com/"
+
+# Document collections
 collections:
   lectures:
     output: true
-
-nav_external_links_new_tab: true
 
 just_the_docs:
   collections:

@@ -6,6 +6,7 @@ description: The course provides a thorough introduction to operating system.
 theme: just-the-docs
 baseurl: ""
 
+
 # Site settings
 logo: /public/uit-top.png
 image: /public/uit-logo.png

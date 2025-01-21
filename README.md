@@ -1,203 +1,108 @@
-# UiT-inf-2201 GitHub-pages
-We have 2 important branches in this repository: `main` and `deploy`.
-
-The flow on this repository is that all work is pushed to  the `main` branch. Actions listening on the `main` branch will autogenerate new content and commit it to the `deploy` branch.
-On the deploy branch we have 2 actions that builds and deploy the website.
-
-The website is found under https://uit-inf-2201.github.io
-
-## Autogenerate markdown pages from lecture pdfs
-The lectures we give in the Operating System course are distributed as PDFs.
-GitHub-pages does not have an out-of-the-box solution to integrate PDFs into our webpage, so we generate a few markdown files as pages which embed reference to the pdfs. You can view the script in`generate_markdown_for_pdf_lectures.sh`.
-
-## Homepage
-The source for the homepage (`/`) is found under `index.md`.
-To make changes to the homepage, change the index file as you like.
-
-## Adding lectures
-To add lecture notes to GitHub-pages
-1. Export your lecture as a PDF
-2. Put it in the `_lectures ` directory
-3. Commit and push the lecture to the `main` branch
-
-## Layout and styling
-This uses most of the default layouts and styles from the template, but includes a custom footer and navigation_footer found under `_includes`. These dictate the logo at the bottom of the navigation bar and contact info at the bottom of the page.
-
-## Contact information
-To change contact information, change the `contact.email` and `contact.name` fields found in `_config.yml`.
-
-# just-the-docs-template
-
-This is a based on just-the-docs template to create a [Jekyll] site that:
-
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
-
-More specifically, the created site:
-
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
-
-To get started with creating a site, simply:
-
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
-
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
-
-After completing the creation of your new site on GitHub, update it as needed:
-
-## Replace the content of the template pages
-
-Update the following files to your own content:
-
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
-
-## Changing the version of the theme and/or Jekyll
-
-Simply edit the relevant line(s) in the `Gemfile`.
-
-## Adding a plugin
-
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
-
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
-
-- Add the following to your site's `Gemfile`:
-
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
-
-- And add the following to your site's `_config.yml`:
-
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
-
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
-
-## Publishing your site on GitHub Pages
-
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
-
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
-
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
-
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
-
-2.  Push your updated `_config.yml` to your site on GitHub.
-
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
-
-## Building and previewing your site locally
-
-Assuming [Jekyll] and [Bundler] are installed on your computer:
-
-1.  Change your working directory to the root directory of your site.
-
-2.  Run `bundle install`.
-
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
-
-    The built site is stored in the directory `_site`.
-
-## Publishing your built site on a different platform
-
-Just upload all the files in the directory `_site`.
-
-## Customization
-
-You're free to customize sites that you create with this template, however you like!
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-## Hosting your docs from an existing project repo
-
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
-
-### Copy the template files
-
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
-
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
-
-### Modify the GitHub Actions workflow
-
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
-
-1.  Set the default `working-directory` param for the build job.
-
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
-
-2.  Set the `working-directory` param for the Setup Ruby step.
-
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
-
-3.  Set the path param for the Upload artifact step:
-
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/_site/
-    ```
-
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
-
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
-
-## Licensing and Attribution
-
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
+---
+title: INF-2201 Operating System Fundamentals
+layout: home
+permalink: /
+---
+
+## Administrative information
+
+Administrative course information is available [here](https://en.uit.no/utdanning/emner/emne?p_document_id=859834)
+
+We use Canvas to share important information, make sure to check your email. 
+For discussions/chat the course has its own Discord server, you will find and invitation link on Canvas.
+
+The github organization for this course can be found [here](https://github.com/uit-inf-2201)
+
+Less formal communication channels are in the making. An invite will be posted on Canvas when it's ready.
+
+
+**Staff**
+
+* John Markus Bjørndalen <john.markus.bjorndalen@uit.no> (Course responsible, Lectures)
+* Loïc Guégan (Lectures)
+* Phuong Hoai Ha (Lectures)
+* Michael John Murphy <michael.j.murphy@uit.no> (Projects)
+* Øyvind Arne Moen Nohr <oyvind.a.nohr@uit.no> (Projects/TA)
+
+TA/groups
+* Hoang Loc La (TA, group 1)
+* Eindride Ilmari Kjersheim (TA, group 2)
+* Belal Medhat Mostafa AbdAlRheem <belal.m.abdalrheem@uit.no> (TA, group 3)
+* Ilya Taksis (TA, group "Digital")
+
+UiT Student administration: [TopDesk link from Canvas](https://uit.topdesk.net/tas/public/ssp/1550ac93-3cae-443d-a606-4ac1b2e5e6e1).
+
+**Cheating**
+
+As a student at UiT, you are obliged to familiarize yourself with the
+current rules that apply to the use of aids during exams, as well as
+rules for source use and citation. In the case of violation of these
+rules, you may be suspected of cheating, or attempt at
+cheating. Cheating on an exam is considered a violation of academic
+integrity. Academic integrity(honesty) is about being clear in
+relation to which thoughts/reflection and work are one's own, and
+which are taken from other's work. Cheating is punishable by
+cancellation of exams and/or exclusion from university.
+
+You can read more about plagiarism and cheating [here](https://uit.no/sensor).
+
+## Lecture plan
+
+Room allocation: 
+- The room allocation and times are available [here](https://tp.educloud.no/uit/timeplan/timeplan.php?id%5B%5D=INF-2201%2C1&type=course&sem=25v&campus=)
+
+Below is the scheduled dates and topics for lectures and project hand-outs. Please note that: 
+
+- **The schedule is tentative and will probably be updated**
+- We may not be in the same room every day or week. Please check your calendar or the room allocation plan above for updated information.
+- The numbers in front of the lectures: these correspond to "lecture numbers" as they were given previous years, but may be slightly out 
+  of order this year as we are updating the course content. 
+
+
+
+| W# | wdays       | Mon           | Tue                       | Wed      | Thu                                     | Fr              |
+|---:|-------------|---------------|---------------------------|----------|-----------------------------------------|-----------------|
+|  2 | 06.01-10.01 |               | 01 intro                  |          | 02 + 04 syscalls, processes, protection |                 |
+|  3 | 13.01-17.01 |               | 05 threads, critsec       | P2 out   | 05 cont., 06 semaphores                 |                 |
+|  4 | 20.01-24.01 |               | 03 OS structure           |          | 07 monitors                             |                 |
+|  5 | 27.01-31.01 |               |                           |          | 08 preemptive                           |                 |
+|  6 | 03.02-07.02 | P2 in         |                           | P3 out   | *SAMEFOLKETS DAG*                       |                 |
+|  7 | 10.02-14.02 |               | *No lecture (TEKdagen)*   |          | 11 msgpassing                           |                 |
+|  8 | 17.02-21.02 |               | 09 deadlocks              |          | 10 cpu scheduling                       |                 |
+|  9 | 24.02-08.02 | P3 in         | 12 io devices and drivers | P4 out   |                                         |                 |
+| 10 | 03.03-07.03 |               | 13 addr-trans paging      |          | 14 paging and vm design                 |                 |
+| 11 | 10.03-14.03 |               |                           |          |                                         |                 |
+| 12 | 17.03-21.03 | P4 in         |                           | P5 out   |                                         |                 |
+| 13 | 24.03-28.03 |               | 15 storage systems        |          |                                         |                 |
+| 14 | 31.03-04.04 |               | 16 file systems           |          |                                         |                 |
+| 15 | 07.04-11.04 | P5 in         |                           | P6 (TBA) |                                         |                 |
+| 16 | 14.04-18.04 | *EASTER*      | *EASTER*                  | *EASTER* | *EASTER*                                | *EASTER*        |
+| 17 | 21.04-25.04 | *EASTER*      |                           |          |                                         |                 |
+| 18 | 28.04-02.05 |               |                           |          |                                         |                 |
+| 19 | 05.05-09.05 | P6 in??       | 17 security               |          |                                         |                 |
+| 20 | 12.05-16.05 |               | 18 exam prep              |          |                                         |                 |
+| 21 | 19.05-23.05 |               |                           |          |                                         |                 |
+| 22 | 26.05-30.05 |               |                           |          |                                         |                 |
+| 23 | 02.06-06.06 | exam?         |                           |          |                                         |                 |
+| 24 | 09.06-13.06 | *whit monday* |                           |          |                                         | End of semester |
+
+## Readings
+
+1. Andrew Tanenbaum, Herbert Bos, Modern Operating Systems Fifth Edition, Global Edition.
+2. Lecture notes
+3. Mandatory assignments
+
+## Mandatory assignments
+
+| Project | Subject                                      | Lecturer |
+|---------|----------------------------------------------|----------|
+| ~~P1~~  | ~~Booting, OS image  (see below)~~           | MM       |
+| P2      | Cooperative scheduling, locks                | MM       |
+| P3      | Preemption, syscalls and dining philosophers | MM       |
+| P4      | IPC, memory                                  | MM       |
+| P5      | Virtual Memory                               | MM       |
+| P6      | File system                                  | MM       |
+
+We are restructuring the course. P1 is no longer a mandatory project,
+and some of tasks from the old P1 project are moved to P2.
 

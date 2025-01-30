@@ -66,21 +66,21 @@ Below is the scheduled dates and topics for lectures and project hand-outs. Plea
 |  3 | 13.01-17.01 |               | 05 threads, critsec       | P2 out   | 05 cont., 06 semaphores                 |                 |
 |  4 | 20.01-24.01 |               | 03 OS structure           |          | 07 monitors                             |                 |
 |  5 | 27.01-31.01 |               |                           |          | 08 preemptive                           |                 |
-|  6 | 03.02-07.02 | P2 in         |                           | P3 out   | *SAMEFOLKETS DAG*                       |                 |
-|  7 | 10.02-14.02 |               | *No lecture (TEKdagen)*   |          | 11 msgpassing                           |                 |
+|  6 | 03.02-07.02 |               |                           |          | *SAMEFOLKETS DAG*                       |                 |
+|  7 | 10.02-14.02 | P2 in         | *No lecture (TEKdagen)*   | P3 out   | 11 msgpassing                           |                 |
 |  8 | 17.02-21.02 |               | 09 deadlocks              |          | 10 cpu scheduling                       |                 |
-|  9 | 24.02-08.02 | P3 in         | 12 io devices and drivers | P4 out   |                                         |                 |
-| 10 | 03.03-07.03 |               | 13 addr-trans paging      |          | 14 paging and vm design                 |                 |
+|  9 | 24.02-08.02 |               | 12 io devices and drivers |          |                                         |                 |
+| 10 | 03.03-07.03 | P3 in         | 13 addr-trans paging      | P4 out   | 14 paging and vm design                 |                 |
 | 11 | 10.03-14.03 |               |                           |          |                                         |                 |
-| 12 | 17.03-21.03 | P4 in         |                           | P5 out   |                                         |                 |
-| 13 | 24.03-28.03 |               | 15 storage systems        |          |                                         |                 |
+| 12 | 17.03-21.03 |               |                           |          |                                         |                 |
+| 13 | 24.03-28.03 | P4 in         | 15 storage systems        | P5 out   |                                         |                 |
 | 14 | 31.03-04.04 |               | 16 file systems           |          |                                         |                 |
-| 15 | 07.04-11.04 | P5 in         |                           | P6 (TBA) |                                         |                 |
-| 16 | 14.04-18.04 | *EASTER*      | *EASTER*                  | *EASTER* | *EASTER*                                | *EASTER*        |
-| 17 | 21.04-25.04 | *EASTER*      |                           |          |                                         |                 |
+| 15 | 07.04-11.04 |               |                           |          |                                         |                 |
+| 16 | 14.04-18.04 | P5 in (TBA)   | *EASTER*                  | *EASTER* | *EASTER*                                | *EASTER*        |
+| 17 | 21.04-25.04 | *EASTER*      |                           | P6 (TBA) |                                         |                 |
 | 18 | 28.04-02.05 |               |                           |          |                                         |                 |
-| 19 | 05.05-09.05 | P6 in??       | 17 security               |          |                                         |                 |
-| 20 | 12.05-16.05 |               | 18 exam prep              |          |                                         |                 |
+| 19 | 05.05-09.05 |               | 17 security               |          |                                         |                 |
+| 20 | 12.05-16.05 | P6 in??       | 18 exam prep              |          |                                         |                 |
 | 21 | 19.05-23.05 |               |                           |          |                                         |                 |
 | 22 | 26.05-30.05 |               |                           |          |                                         |                 |
 | 23 | 02.06-06.06 | exam?         |                           |          |                                         |                 |

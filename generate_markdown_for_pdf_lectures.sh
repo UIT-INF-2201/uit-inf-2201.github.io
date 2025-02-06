@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+set -e
 
 folder="./_lectures"
 file_identifiers=('makefile')

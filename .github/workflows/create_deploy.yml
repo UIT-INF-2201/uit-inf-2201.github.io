@@ -34,7 +34,7 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
       - name: produce_pdf
-        run: sh ./generate_markdown_for_pdf_lectures.sh
+        run: bash ./generate_markdown_for_pdf_lectures.sh
       - name: commit
         run: |
           git config --global user.email github-actions@github.com

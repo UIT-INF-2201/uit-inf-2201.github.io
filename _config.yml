@@ -5,6 +5,10 @@ description: The course provides a thorough introduction to operating system.
   During the course each student will develop a running operating system kernel for an Intel x86 based computer.
 theme: just-the-docs
 baseurl: ""
+highlighter: rouge
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 
 # Site settings
@@ -26,6 +30,7 @@ aux_links:
 
   "2201 on Canvas":
     - "https://uit.instructure.com/"
+
 
 # Document collections
 collections:

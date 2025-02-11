@@ -31,6 +31,10 @@ aux_links:
   "2201 on Canvas":
     - "https://uit.instructure.com/"
 
+nav_external_links:
+  - title: Lectures on Canvas
+    url: https://uit.instructure.com/courses/36446/files/folder/Lectures
+
 
 # Document collections
 collections:

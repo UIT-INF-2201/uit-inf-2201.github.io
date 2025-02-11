@@ -106,3 +106,36 @@ Below is the scheduled dates and topics for lectures and project hand-outs. Plea
 We are restructuring the course. P1 is no longer a mandatory project,
 and some of tasks from the old P1 project are moved to P2.
 
+## Deadlines ⏰
+As a general rule
+- hand out projects **not before** lectures on Wednesdays.
+- hand in projects **14:30** Monday before next project.
+- grades published **not before 12:00** Friday after hand in
+
+## Design reviews 🔍
+In this course, we mandate that you participate in 'design reviews`.
+
+So what is a design review?
+
+Design review is a short session between a TA and a group, typically 10 minutes, inviting you to explain how you plan to solve the ongoing mandatory project. There is no time for an in-depth explanation of code, algorithms, etc., you must summarize and give a precise presentation of your solution's abstract **design**.
+
+Design reviews are broken into a few stages.
+1. You hold a presentation about how you intend to solve the problem
+2. The TA will ask you questions typically about
+  - Topics you did not cover
+  - Topics you were unclear about
+3. You get feedback and grade.
+  - If you do not pass, don't worry. You will get a second chance, reschedule with your TA.
+
+The whole idea of design reviews is to make sure you pass the assignments!
+
+When will the design reviews take place?
+
+During colloquium hours the week after hand-out.
+
+## Hand-in 📮
+- Deliver assignments by deadline on canvas
+  - Format should be .zip
+  - Remember to include your report!
+- Remember to remove any prebuilt binaries (make clean)
+- Include everything i.e. hidden folders such as .git

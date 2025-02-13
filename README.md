@@ -120,7 +120,7 @@ So what is a design review?
 Design review is a short session between a TA and a group, typically 10 minutes, inviting you to explain how you plan to solve the ongoing mandatory project. There is no time for an in-depth explanation of code, algorithms, etc., you must summarize and give a precise presentation of your solution's abstract **design**.
 
 Design reviews are broken into a few stages.
-1. You hold a presentation about how you intend to solve the problem
+1. You hold a presentation about what the problem(s) is/are and how you think you can solve it
 2. The TA will ask you questions typically about
   - Topics you did not cover
   - Topics you were unclear about

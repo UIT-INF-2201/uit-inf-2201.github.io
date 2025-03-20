@@ -76,10 +76,10 @@ Below is the scheduled dates and topics for lectures and project hand-outs. Plea
 | 13 | 24.03-28.03 | P4 in         | 15 storage systems        | P5 out             |                                         |                 |
 | 14 | 31.03-04.04 |               | 16 file systems           |                    |                                         |                 |
 | 15 | 07.04-11.04 |               |                           |                    |                                         |                 |
-| 16 | 14.04-18.04 | P5 in (TBA)   | *EASTER*                  | *EASTER*           | *EASTER*                                | *EASTER*        |
+| 16 | 14.04-18.04 |               | *EASTER*                  | *EASTER*           | *EASTER*                                | *EASTER*        |
 | 17 | 21.04-25.04 | *EASTER*      |                           | P6 (TBA)           |                                         |                 |
-| 18 | 28.04-02.05 |               |                           |                    |                                         |                 |
-| 19 | 05.05-09.05 |               | 17 security               |                    |                                         |                 |
+| 18 | 28.04-02.05 | P5 in         |                           | P6 out (opptional) |                                         |                 |
+| 19 | 05.05-09.05 |               | 17 TBA (security??)       |                    |                                         |                 |
 | 20 | 12.05-16.05 | P6 in??       | 18 exam prep              |                    |                                         |                 |
 | 21 | 19.05-23.05 |               |                           |                    |                                         |                 |
 | 22 | 26.05-30.05 |               |                           |                    |                                         |                 |

@@ -79,8 +79,8 @@ Below is the scheduled dates and topics for lectures and project hand-outs. Plea
 | 16 | 14.04-18.04 |               | *EASTER*                  | *EASTER*           | *EASTER*                                | *EASTER*        |
 | 17 | 21.04-25.04 | *EASTER*      |                           | P6 (TBA)           |                                         |                 |
 | 18 | 28.04-02.05 | P5 in         |                           | P6 out (opptional) |                                         |                 |
-| 19 | 05.05-09.05 |               | 17 TBA (security??)       |                    |                                         |                 |
-| 20 | 12.05-16.05 | P6 in??       | 18 exam prep              |                    |                                         |                 |
+| 19 | 05.05-09.05 |               | 18 exam prep              |                    |                                         |                 |
+| 20 | 12.05-16.05 | P6 in??       |                           |                    |                                         |                 |
 | 21 | 19.05-23.05 |               |                           |                    |                                         |                 |
 | 22 | 26.05-30.05 |               |                           |                    |                                         |                 |
 | 23 | 02.06-06.06 | exam?         |                           |                    |                                         |                 |

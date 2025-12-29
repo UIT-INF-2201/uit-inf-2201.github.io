@@ -25,10 +25,10 @@ nav_external_links_new_tab: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "2201 on GitHub":
-    - "https://github.com/uit-inf-2201"
+  "2203 on GitHub":
+    - "https://github.com/uit-inf-2203"
 
-  "2201 on Canvas":
+  "2203 on Canvas":
     - "https://uit.instructure.com/"
 
 nav_external_links:

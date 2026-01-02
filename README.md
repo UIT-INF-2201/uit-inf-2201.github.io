@@ -6,12 +6,12 @@ permalink: /
 
 ## Administrative information
 
-Administrative course information is available [here](https://en.uit.no/utdanning/emner/emne?p_document_id=859834)
+Administrative course information is available [here](https://uit.no/utdanning/aktivt/emne/INF-2203)
 
 We use Canvas to share important information, make sure to check your email. 
 For discussions/chat the course has its own Discord server, you will find and invitation link on Canvas.
 
-The github organization for this course can be found [here](https://github.com/uit-inf-2201)
+The github organization for this course can be found [here](https://github.com/uit-inf-2203)
 
 Less formal communication channels are in the making. An invite will be posted on Canvas when it's ready.
 
